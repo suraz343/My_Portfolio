@@ -7,8 +7,7 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/styles.css">
-
+    
 
 </head>
 <body>
@@ -29,9 +28,14 @@
                 <button class="btn btn-outline-success m-1" type="submit">Search</button>
                 <a href="/logout" class="btn btn-dark m-1">Logout</a>
             </form>
-        </div>
     </nav>
-    <h1>Welcome {{request.user}} to the website your are successfully logged in.</h1>
+    <div style="text-align: center; display: block; margin: 5px;">
+    <h1 style="font-weight: bolder; color: chocolate;">Hey, Developers👋<br> I am  {{request.user}} </h1>
+    
+    <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" height="20%" width="20%">
+    <h3 style="color: chocolate;">App/Web Developer</h3>
+    <p style="padding-left: 20%; padding-right: 20%; font-weight: bold;">Dynamic and highly skilled App/Web Developer with 2 years of experience in creating responsive and user-friendly applications for various platforms. Proficient in front-end and back-end development, with a strong commitment to staying current with emerging technologies and best practices. Seeking opportunities to contribute expertise and creativity to innovative software projects.</p>
+</div>
     
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

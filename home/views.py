@@ -28,10 +28,10 @@ def signup(request):
         password = request.POST.get('password')
         myuser = User.objects.create_user(username=user_name,email=email,password=password)
         
-
+        # for sending mail
         htmly = get_template('Email.html')
         data = { 'username': user_name }
-        subject, from_email, to = 'welcome', 'your_email@gmail.com', email
+        subject, from_email, to = 'Welcome', 'your_email@gmail.com', email
         html_content = htmly.render(data)
         msg = EmailMultiAlternatives(subject, html_content, from_email, [to])
         msg.attach_alternative(html_content, "text/html")
